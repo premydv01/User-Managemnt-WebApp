@@ -1,0 +1,23 @@
+server:
+  port: 9080
+  servlet:
+    context-path: /UserManagement
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: 
+    url: jdbc:h2:mem:testdb
+    username: sa
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+    defer-datasource-initialization: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+ 

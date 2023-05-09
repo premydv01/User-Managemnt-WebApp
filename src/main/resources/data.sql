@@ -1,0 +1,16 @@
+insert into COUNTRY_MASTER  values(1,101,'USA')
+insert into COUNTRY_MASTER  values(2,201,'India')
+
+insert into STATE_MASTER  values(1,1,'Ohio')
+insert into STATE_MASTER  values(2,1,'NewYork')
+insert into STATE_MASTER  values(3,2,'Bihar')
+insert into STATE_MASTER  values(4,2,'Jharkhand')
+
+insert into CITY_MASTER  values(1,'OhioCityFirst',1)
+insert into CITY_MASTER  values(2,'OhioCitySecond',1)
+insert into CITY_MASTER  values(3,'NewYorkCityFirst',2)
+insert into CITY_MASTER  values(4,'NewYorkCitySecond',2)
+insert into CITY_MASTER  values(5,'Patna',3)
+insert into CITY_MASTER  values(6,'Ara',3)
+insert into CITY_MASTER  values(7,'Bokaro',4)
+insert into CITY_MASTER  values(8,'Ranchi',4)
