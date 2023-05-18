@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.pky.model.UnlockAccount;
 import com.pky.model.User;
 import com.pky.service.UserService;
 
@@ -19,8 +20,8 @@ import com.pky.service.UserService;
 public class UserController {
 	@Autowired
 	private UserService service;
-	
-	@GetMapping(value = {"/","/register"})
+// This Controller method is use for loding the Registration form and loading all the countries with countryId	
+	@GetMapping(value = "/register")
 	public String loadRegistrationForm(Model model) {
 		User u=new User();
 		model.addAttribute("user",u);
@@ -31,20 +32,20 @@ public class UserController {
 		return "userRegistration";
 	}
 	
-
+// This Controller method is used for reciving the ajax req for Asyncronous Comunication for dipendent dropdown
 	@GetMapping("/getStates")
 	@ResponseBody
 	public Map<Integer,String> getStatesByCountryId(@RequestParam("cid")Integer countryId){
 		return service.getStatesByCountryId(countryId);
 	}
-	
+	// This Controller method is used for reciving the ajax req for Asyncronous Comunication for dipendent dropdown	
 	@GetMapping("/getCities")
 	@ResponseBody
 	public Map<Integer,String> getStatesByCityId(@RequestParam("sid")Integer stateId){
 		return service.getCityByStateId(stateId);
 	}
 	
-	
+//this Controller method is used for submitting the user form	
 	@PostMapping(value = "/register")
 	public String registerUser(@ModelAttribute("user")User user,Model model) {
 		boolean isSave=service.saveUserAccount(user);
@@ -56,7 +57,7 @@ public class UserController {
 		return "regstatus";
 	}
 
-	
+//This Controller method will used for validating the email while filling the form is it duplicate or unique by Ajax Asynchronous Request	
 	@GetMapping("/validateEmail")
 	@ResponseBody
 	public String validateEmail(@RequestParam("email")String emailId) {
@@ -64,4 +65,6 @@ public class UserController {
 		  String emailStatus=service.getUserbyEmailId(emailId);
 		return emailStatus;
 	}
+
+
 }

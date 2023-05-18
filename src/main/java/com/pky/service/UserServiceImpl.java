@@ -9,6 +9,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.pky.constants.AppConstants;
 import com.pky.entities.CityMasterEntity;
 import com.pky.entities.CountryMasterEntity;
 import com.pky.entities.StateMasterEntity;
@@ -18,6 +19,9 @@ import com.pky.repository.CityMasterRepository;
 import com.pky.repository.CountryMasterRepository;
 import com.pky.repository.StateMasterRepository;
 import com.pky.repository.UserAccountsRepository;
+import com.pky.utils.EmailUtils;
+import com.pky.utils.ForgetPwdEmail;
+import com.pky.utils.PwdUtils;
 @Service
 public class UserServiceImpl  implements UserService{
     @Autowired
@@ -29,6 +33,12 @@ public class UserServiceImpl  implements UserService{
     
     @Autowired
     private CityMasterRepository cityRepo;
+    
+    @Autowired
+    private EmailUtils emailUtils;
+    
+    @Autowired
+    private ForgetPwdEmail forgetPwdEmail;
     
 	
 	@Override
@@ -70,10 +80,16 @@ public class UserServiceImpl  implements UserService{
  
 	@Override
 	public boolean saveUserAccount(User user) {
+		user.setUserPwd(PwdUtils.generateTempPwd(AppConstants.TEMP_PWD_LENGTH));
+		user.setAccStatus(AppConstants.LOCKED_STR);
+		
 		UserAccountEntity userEntity=new UserAccountEntity();
 		BeanUtils.copyProperties(user,userEntity);
 		     UserAccountEntity entity=userRepo.save(userEntity);
-		return entity.getUserId()!=null;
+		 if(entity.getUserId()!=null) {
+			 return emailUtils.sendUserUnlockEmail(user);
+		 }
+		 return false;
 	}
 
 //this getUserByEmailId()  method is used for Email validatation
@@ -85,7 +101,66 @@ public class UserServiceImpl  implements UserService{
 	    }
 		return "Unique";
 	}
+
+//this method is for Unlocking the account for Updating new Password
+	@Override
+	public User getUserAccountByTempPwdAndUserEmail(String tempPwd,String userEmail) {
+	          UserAccountEntity userEntity=userRepo.findByUserPwdAndUserEmail(tempPwd,userEmail);
+	         User user=null;
+	                  
+	          if(userEntity != null) {
+	        	 user=new User();
+	        	 BeanUtils.copyProperties(userEntity, user);
+	          }
+		return user;
+	}
+
+//This method is for unlocking and updating the Account
+	@Override
+	public boolean updateUserAccount(User user) {
+         UserAccountEntity entity=new UserAccountEntity();
+         BeanUtils.copyProperties(user,entity);
+         UserAccountEntity updateEntity=userRepo.save(entity);
+		return updateEntity!=null;
+	}
 	
+	
+//this method is for login validation
+	@Override
+	public User getUserAccountByEmail(String email) {
+		UserAccountEntity entity=userRepo.findByUserEmail(email);
+		System.out.println("Entity"+entity);
+		User user=null;
+		try {
+		 user=new User();
+		BeanUtils.copyProperties(entity, user);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+
+//this method is use for  Reseting the forget pwd by sending the mail to user email
+	@Override
+	public boolean getUserAccountByEmailForgetPwd(String email) {
+		  UserAccountEntity userEntity=userRepo.findByUserEmail(email);
+		  if(userEntity!=null) {
+			  return  forgetPwdEmail.sendUserToResetEmail(userEntity);
+		  }
+		return false;
+	}
+
+
+	@Override
+	public boolean updateUserNewPwd(User user) {
+		   UserAccountEntity entity=new UserAccountEntity();
+	         BeanUtils.copyProperties(user,entity);
+	         UserAccountEntity updateEntity=userRepo.save(entity);
+			return updateEntity!=null;
+		
+	}
+	
+
 	
 
 }

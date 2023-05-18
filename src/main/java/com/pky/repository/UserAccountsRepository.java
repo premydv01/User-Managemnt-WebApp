@@ -9,4 +9,6 @@ import com.pky.entities.UserAccountEntity;
 public interface UserAccountsRepository extends JpaRepository<UserAccountEntity,Integer> {
     
 	public UserAccountEntity findByUserEmail(String userEmail);
+	
+	public UserAccountEntity  findByUserPwdAndUserEmail(String userPwd,String userEmail);
 }

@@ -1,0 +1,11 @@
+Hi  {FNAME}, {LNAME} :
+<br/>
+Welcome to PSW family , Reset your New Password
+</br>
+
+</br>
+<a href='http://localhost:9080/UserManagement/setNewPwd?email={EMAIL}'>
+Click Here to Rest Your Account Password</a> </br>
+</br>
+Thanks & Regards,</br>
+PSW Team.</br>

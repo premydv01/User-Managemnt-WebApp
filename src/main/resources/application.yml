@@ -20,4 +20,19 @@ spring:
     view:
       prefix: /views/
       suffix: .jsp
- 
+# these below smtp properties for sending the mail from spring boot app
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: pprem6672@gmail.com
+    password: czbwryagnnwrrilf    
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          starttls:
+            enable: true
+          timeout: 5000
+          writetimeout: 5000
+  

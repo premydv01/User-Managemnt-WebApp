@@ -11,5 +11,14 @@ public interface UserService {
 	public boolean saveUserAccount(User user);
 	
 	public  String getUserbyEmailId(String email);
+	public User getUserAccountByTempPwdAndUserEmail(String tempPwd,String userEmail);
+	
+	public boolean updateUserAccount(User user);
+	
+	public User getUserAccountByEmail(String email);
+	
+	public boolean getUserAccountByEmailForgetPwd(String email);
+	
+	public boolean updateUserNewPwd(User user);
 
 }
