@@ -2,13 +2,15 @@ package com.pky.controller;
 
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -18,17 +20,22 @@ import com.pky.service.UserService;
 
 @Controller
 public class UserController {
+	private static Logger logger=LoggerFactory.getLogger(UserController.class);
+	
 	@Autowired
 	private UserService service;
 // This Controller method is use for loding the Registration form and loading all the countries with countryId	
 	@GetMapping(value = "/register")
 	public String loadRegistrationForm(Model model) {
+		logger.info("******Method execution is started****************");
+		
 		User u=new User();
 		model.addAttribute("user",u);
 		
 			Map<Integer,String> countries=service.getAllCountries();
 			model.addAttribute("countryMap",countries);
 			
+	    logger.info("*******Method Execution is Completed******************");		
 		return "userRegistration";
 	}
 	
