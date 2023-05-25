@@ -1,0 +1,137 @@
+2023-05-25 11:57:53.329  WARN 14800 --- [HikariPool-14 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Thread starvation or clock leap detected (housekeeper delta=1d15h27m36s976ms26µs600ns).
+2023-05-25 12:20:36.404  INFO 14800 --- [RMI TCP Connection(1698)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-25 12:20:36.446  INFO 14800 --- [RMI TCP Connection(1698)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-25 12:20:36.467  INFO 14800 --- [RMI TCP Connection(1698)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 12:20:36.484  INFO 14800 --- [RMI TCP Connection(1698)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-25 12:20:36.883  WARN 14800 --- [RMI TCP Connection(1698)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-25 12:20:36.886  INFO 14800 --- [RMI TCP Connection(1698)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2023-05-25 12:20:36.889  INFO 14800 --- [RMI TCP Connection(1698)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2023-05-25 12:21:25.887  INFO 10508 --- [restartedMain] com.pky.Application                      : Starting Application using Java 15.0.2 on DESKTOP-GR23A35 with PID 10508 (E:\Prakash_workspace\ProjectByAshok\07-Sb-User-Managenent-Web-App\target\classes started by Prabhat in E:\Prakash_workspace\ProjectByAshok\07-Sb-User-Managenent-Web-App)
+2023-05-25 12:21:25.890  INFO 10508 --- [restartedMain] com.pky.Application                      : No active profile set, falling back to 1 default profile: "default"
+2023-05-25 12:21:25.960  INFO 10508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-25 12:21:25.961  INFO 10508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-25 12:21:26.826  INFO 10508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-25 12:21:26.916  INFO 10508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2023-05-25 12:21:27.829  INFO 10508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9080 (http)
+2023-05-25 12:21:27.831  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-05-25 12:21:27.831  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-05-25 12:21:27.831  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-25 12:21:27.837  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-05-25 12:21:27.847  INFO 10508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-25 12:21:27.848  INFO 10508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-25 12:21:28.132  INFO 10508 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-05-25 12:21:28.148  INFO 10508 --- [restartedMain] o.a.c.c.C.[.[.[/UserManagement]          : Initializing Spring embedded WebApplicationContext
+2023-05-25 12:21:28.148  INFO 10508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2186 ms
+2023-05-25 12:21:28.187  INFO 10508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-25 12:21:28.449  INFO 10508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-25 12:21:28.462  INFO 10508 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-05-25 12:21:28.665  INFO 10508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-25 12:21:28.744  INFO 10508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-25 12:21:28.975  INFO 10508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-25 12:21:29.138  INFO 10508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-25 12:21:29.828  INFO 10508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-25 12:21:29.838  INFO 10508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 12:21:30.347  WARN 10508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-25 12:21:30.516  INFO 10508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-25 12:21:30.734  INFO 10508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-25 12:21:30.791  INFO 10508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9080 (http) with context path '/UserManagement'
+2023-05-25 12:21:30.801  INFO 10508 --- [restartedMain] com.pky.Application                      : Started Application in 5.412 seconds (JVM running for 8.972)
+2023-05-25 12:22:28.774  INFO 10508 --- [http-nio-9080-exec-10] o.a.c.c.C.[.[.[/UserManagement]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-25 12:22:28.774  INFO 10508 --- [http-nio-9080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-25 12:22:28.779  INFO 10508 --- [http-nio-9080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-25 12:22:40.728  INFO 10508 --- [http-nio-9080-exec-7] com.pky.controller.UserController        : ***Registration Form is Loaded Successfully***
+2023-05-25 12:23:03.820  INFO 10508 --- [http-nio-9080-exec-10] com.pky.controller.UserController        : ***User Registration Completed SuccessFully***
+2023-05-25 12:31:39.485  INFO 10508 --- [http-nio-9080-exec-6] c.p.controller.UnlockAccountController   : Unlock Account Screen Is Loaded
+2023-05-25 12:33:41.901  INFO 10508 --- [http-nio-9080-exec-9] c.p.controller.UnlockAccountController   : ***User Account Unlocked Successfully***
+2023-05-25 12:35:29.220  INFO 10508 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-25 12:35:29.241  INFO 10508 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-25 12:35:29.242  INFO 10508 --- [Thread-6] o.a.c.c.C.[.[.[/UserManagement]          : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-25 12:35:29.253  INFO 10508 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 12:35:29.253  INFO 10508 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-25 12:35:29.467  WARN 10508 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-25 12:35:29.470  INFO 10508 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-25 12:35:29.481  INFO 10508 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-25 12:35:29.617  INFO 10508 --- [restartedMain] com.pky.Application                      : Starting Application using Java 15.0.2 on DESKTOP-GR23A35 with PID 10508 (E:\Prakash_workspace\ProjectByAshok\07-Sb-User-Managenent-Web-App\target\classes started by Prabhat in E:\Prakash_workspace\ProjectByAshok\07-Sb-User-Managenent-Web-App)
+2023-05-25 12:35:29.617  INFO 10508 --- [restartedMain] com.pky.Application                      : No active profile set, falling back to 1 default profile: "default"
+2023-05-25 12:35:29.819  INFO 10508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-25 12:35:29.835  INFO 10508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2023-05-25 12:35:29.959  INFO 10508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9080 (http)
+2023-05-25 12:35:29.960  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-05-25 12:35:29.960  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-05-25 12:35:29.960  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-25 12:35:29.960  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-05-25 12:35:29.961  INFO 10508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-25 12:35:29.961  INFO 10508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-25 12:35:30.076  INFO 10508 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-05-25 12:35:30.080  INFO 10508 --- [restartedMain] o.a.c.c.C.[.[.[/UserManagement]          : Initializing Spring embedded WebApplicationContext
+2023-05-25 12:35:30.080  INFO 10508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 460 ms
+2023-05-25 12:35:30.095  INFO 10508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-05-25 12:35:30.098  INFO 10508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-05-25 12:35:30.099  INFO 10508 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-05-25 12:35:30.137  INFO 10508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-25 12:35:30.142  INFO 10508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-25 12:35:30.205  INFO 10508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-25 12:35:30.205  INFO 10508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 12:35:30.372  WARN 10508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-25 12:35:30.420  INFO 10508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-25 12:35:30.487  INFO 10508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-25 12:35:30.503  INFO 10508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9080 (http) with context path '/UserManagement'
+2023-05-25 12:35:30.508  INFO 10508 --- [restartedMain] com.pky.Application                      : Started Application in 0.945 seconds (JVM running for 848.678)
+2023-05-25 12:35:30.509  INFO 10508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-25 12:35:57.119  INFO 10508 --- [http-nio-9080-exec-2] o.a.c.c.C.[.[.[/UserManagement]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-25 12:35:57.119  INFO 10508 --- [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-25 12:35:57.123  INFO 10508 --- [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-25 12:35:59.588  INFO 10508 --- [http-nio-9080-exec-8] com.pky.controller.UserController        : ***Registration Form is Loaded Successfully***
+2023-05-25 12:36:20.154  INFO 10508 --- [http-nio-9080-exec-5] com.pky.controller.UserController        : ***User Registration Completed SuccessFully***
+2023-05-25 12:36:40.559  INFO 10508 --- [http-nio-9080-exec-3] c.p.controller.UnlockAccountController   : Unlock Account Screen Is Loaded
+2023-05-25 12:36:51.413  INFO 10508 --- [http-nio-9080-exec-2] c.p.controller.UnlockAccountController   : ***User Account Unlocked Successfully***
+2023-05-25 12:41:54.002  INFO 10508 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-25 12:41:54.014  INFO 10508 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-25 12:41:54.015  INFO 10508 --- [Thread-8] o.a.c.c.C.[.[.[/UserManagement]          : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-25 12:41:54.021  INFO 10508 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 12:41:54.022  INFO 10508 --- [Thread-8] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-25 12:41:54.225  WARN 10508 --- [Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-25 12:41:54.226  INFO 10508 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-05-25 12:41:54.227  INFO 10508 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-05-25 12:41:54.353  INFO 10508 --- [restartedMain] com.pky.Application                      : Starting Application using Java 15.0.2 on DESKTOP-GR23A35 with PID 10508 (E:\Prakash_workspace\ProjectByAshok\07-Sb-User-Managenent-Web-App\target\classes started by Prabhat in E:\Prakash_workspace\ProjectByAshok\07-Sb-User-Managenent-Web-App)
+2023-05-25 12:41:54.353  INFO 10508 --- [restartedMain] com.pky.Application                      : No active profile set, falling back to 1 default profile: "default"
+2023-05-25 12:41:54.523  INFO 10508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-25 12:41:54.545  INFO 10508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2023-05-25 12:41:54.656  INFO 10508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9080 (http)
+2023-05-25 12:41:54.656  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-05-25 12:41:54.657  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-05-25 12:41:54.657  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-25 12:41:54.657  INFO 10508 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-05-25 12:41:54.658  INFO 10508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-25 12:41:54.658  INFO 10508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-25 12:41:54.734  INFO 10508 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-05-25 12:41:54.737  INFO 10508 --- [restartedMain] o.a.c.c.C.[.[.[/UserManagement]          : Initializing Spring embedded WebApplicationContext
+2023-05-25 12:41:54.737  INFO 10508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 382 ms
+2023-05-25 12:41:54.751  INFO 10508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-05-25 12:41:54.754  INFO 10508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-05-25 12:41:54.754  INFO 10508 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-05-25 12:41:54.784  INFO 10508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-25 12:41:54.789  INFO 10508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-25 12:41:54.847  INFO 10508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-25 12:41:54.847  INFO 10508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 12:41:55.006  WARN 10508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-25 12:41:55.064  INFO 10508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-05-25 12:41:55.140  INFO 10508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-25 12:41:55.154  INFO 10508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9080 (http) with context path '/UserManagement'
+2023-05-25 12:41:55.158  INFO 10508 --- [restartedMain] com.pky.Application                      : Started Application in 0.852 seconds (JVM running for 1233.328)
+2023-05-25 12:41:55.159  INFO 10508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-25 12:42:13.667  INFO 10508 --- [http-nio-9080-exec-1] o.a.c.c.C.[.[.[/UserManagement]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-25 12:42:13.668  INFO 10508 --- [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-25 12:42:13.673  INFO 10508 --- [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-05-25 12:42:25.123  INFO 10508 --- [http-nio-9080-exec-9] com.pky.controller.UserController        : ***Registration Form is Loaded Successfully***
+2023-05-25 12:42:45.982  INFO 10508 --- [http-nio-9080-exec-2] com.pky.controller.UserController        : ***User Registration Completed SuccessFully***
+2023-05-25 12:43:00.921  INFO 10508 --- [http-nio-9080-exec-1] c.p.controller.UnlockAccountController   : Unlock Account Screen Is Loaded
+2023-05-25 12:43:18.686  INFO 10508 --- [http-nio-9080-exec-3] c.p.controller.UnlockAccountController   : ***User Account Unlocked Successfully***
+2023-05-25 14:50:09.718  INFO 10508 --- [RMI TCP Connection(152)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-25 14:50:09.789  INFO 10508 --- [RMI TCP Connection(152)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-25 14:50:09.796  INFO 10508 --- [RMI TCP Connection(152)-127.0.0.1] o.a.c.c.C.[.[.[/UserManagement]          : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-25 14:50:09.831  INFO 10508 --- [RMI TCP Connection(152)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-25 14:50:09.843  INFO 10508 --- [RMI TCP Connection(152)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-25 14:50:10.327  WARN 10508 --- [RMI TCP Connection(152)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-25 14:50:10.330  INFO 10508 --- [RMI TCP Connection(152)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-05-25 14:50:10.339  INFO 10508 --- [RMI TCP Connection(152)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.

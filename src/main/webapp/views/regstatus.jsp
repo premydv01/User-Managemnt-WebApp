@@ -9,6 +9,6 @@
 <body>
 <font color="green"><h1>${msg}</h1></font>
 <font color="red"><h1>${errMsg}</h1></font>
-<a href="register" >Go Back</a>
+<a href="signInUser" >Go Back</a>
 </body>
 </html>
